@@ -7,7 +7,7 @@ import life
 
 def parse_file(fname, size):
     pattern = set()
-    dx, dy = size[0]/2, size[1]/2
+    dx, dy = int(size[0]/2), int(size[1]/2)
 
     with open(fname) as f:
         for row in f:
